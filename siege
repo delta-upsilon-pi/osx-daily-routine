@@ -1,0 +1,4 @@
+#!/bin/bash
+
+blueutil on
+networksetup -setairportpower en1 off

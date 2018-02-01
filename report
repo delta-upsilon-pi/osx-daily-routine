@@ -1,0 +1,14 @@
+#!/bin/bash
+
+name="${1}"
+output=$("$@")
+code="$?"
+
+echo "$output"
+osascript -e "display notification \"$ $*\" with title \"Executed >>> $code\""
+
+if [ "$code" -eq 0 ] ; then
+  say "$name succeed"
+else
+  say "$name failed with code $code"
+fi
