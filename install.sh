@@ -12,5 +12,5 @@ else
     fi
 fi
 
-chmod +x ./report
-cp ./report /usr/local/bin
+chmod +x ./report ./restart-camera
+cp ./{report,restart-camera} /usr/local/bin

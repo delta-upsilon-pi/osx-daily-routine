@@ -1,0 +1,2 @@
+sudo killall AppleCameraAssistant
+sudo killall VDCAssistant
